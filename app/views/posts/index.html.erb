@@ -1,0 +1,9 @@
+<h1>Posts index</h1>
+
+<div">
+  <ul id="posts-list">
+    <% @posts.each do |post|%>
+      <li> <%= post.title %> - <%= post.description %> </li>
+    <% end %>
+  </ul>
+</div">

@@ -1,0 +1,13 @@
+<%= form_for @post, remote: true do |f| %>
+  <label> Title </label>
+  <br/>
+  <%= f.text_field :title %>
+
+  <br/>
+  <label> Description </label>
+  <br/>
+  <%= f.text_area :description %>
+
+  <br/>
+  <%= f.submit "Create" %>
+<% end %>
